@@ -1,0 +1,170 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f111a;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(135deg, #181a29 0%, #23263a 50%, #2c2f4a 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+  color: #d1dbd1 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.navbar .btn-outline-light[href="login.php"]:hover {
+  background: linear-gradient(135deg, #198754, #20c997) !important;
+  border-color: transparent !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(25, 135, 84, 0.4) !important;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181a29 0%, #23263a 50%, #2c2f4a 100%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(13, 110, 253, 0.2);
+  filter: blur(120px);
+  top: -100px;
+  left: -100px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(102, 16, 242, 0.2);
+  filter: blur(120px);
+  bottom: -100px;
+  right: -100px;
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* SERVICES */
+.services {
+  background: linear-gradient(135deg, #181a29, #1f2235, #2c2f4a);
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+  border-color: rgba(255,255,255,0.15);
+}
+
+.card-title {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.card-text {
+  color: #cbd5e1;
+}
+
+/* HOW IT WORKS */
+.how {
+  background: linear-gradient(135deg, #181a29, #202338, #2c2f4a);
+}
+
+.step-card {
+  padding: 3rem 2rem;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.step-card .display-5 {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+}
+
+/* FACEBOOK BUTTON */
+.navbar .btn-facebook {
+  background: linear-gradient(135deg, #1877F2 0%, #0E5A8A 100%) !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.6rem 1.5rem !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar .btn-facebook:hover {
+  background: linear-gradient(135deg, #166FE5 0%, #0D5BA1 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4) !important;
+  color: white !important;
+}
+
+.navbar .btn-facebook i {
+  font-size: 1.1em !important;
+}

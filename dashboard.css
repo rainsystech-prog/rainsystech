@@ -1,0 +1,318 @@
+/* DASHBOARD - PERFECT THEME MATCH */
+.dashboard-page {
+  background: linear-gradient(
+    135deg,
+    #181a29 0%,
+    #23263a 50%,
+    #2c2f4a 100%
+  ) !important;
+  min-height: 100vh;
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.dashboard-page::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(13, 110, 253, 0.1);
+  filter: blur(150px);
+  top: -200px;
+  left: -200px;
+  animation: float 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+.dashboard-page::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(102, 16, 242, 0.1);
+  filter: blur(120px);
+  bottom: -150px;
+  right: -150px;
+  animation: float 8s ease-in-out infinite reverse;
+  z-index: 1;
+}
+
+/* NAVBAR */
+.dashboard-navbar {
+  background: linear-gradient(135deg, #181a29 0%, #23263a 50%, #2c2f4a 100%) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  padding: 1rem 2rem !important;
+  backdrop-filter: blur(20px) !important;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.dashboard-navbar .navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+  font-style: italic !important;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dashboard-navbar .btn-outline-light {
+  border-color: rgba(255,255,255,0.3) !important;
+  color: #d1d5db !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 12px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.dashboard-navbar .btn-outline-light:hover {
+  background: linear-gradient(135deg, #0d6efd, #6610f2) !important;
+  border-color: transparent !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.4) !important;
+}
+
+/* MAIN CONTENT */
+.dashboard-content {
+  padding: 3rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.dashboard-welcome {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.dashboard-welcome h2 {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #0d6efd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.dashboard-welcome p {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ACTION BUTTONS */
+.dashboard-actions {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-action-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.dashboard-action-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  z-index: 2;
+}
+
+.dashboard-action-card:hover {
+  transform: translateY(-15px) !important;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5) !important;
+  border-color: rgba(255,255,255,0.15) !important;
+}
+
+.dashboard-action-card h4 {
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.4rem !important;
+}
+
+.dashboard-action-card p {
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+}
+
+/* BOOK BUTTON */
+.book-card {
+  border-left: 5px solid #0d6efd;
+}
+
+.book-card::before {
+  background: linear-gradient(90deg, #0d6efd, #6610f2) !important;
+}
+
+.book-card .dashboard-btn {
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%) !important;
+}
+
+/* MANAGE BUTTON */
+.manage-card {
+  border-left: 5px solid #f59e0b;
+}
+
+.manage-card::before {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24) !important;
+}
+
+.manage-card .dashboard-btn {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%) !important;
+}
+
+/* DASHBOARD BUTTONS */
+.dashboard-btn {
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 12px 30px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: white !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+  width: 180px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important;
+}
+
+.dashboard-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s;
+}
+
+.dashboard-btn:hover::before {
+  left: 100%;
+}
+
+.dashboard-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dashboard-welcome h2 {
+    font-size: 2.2rem !important;
+  }
+  
+  .dashboard-action-card {
+    height: 180px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dashboard-navbar {
+    padding: 1rem !important;
+  }
+}
+/* Recent Appointments Styles */
+.recent-appointments-section h4 {
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+}
+
+.recent-appointments-section h4::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.appointment-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.appointment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.appointment-card.confirmed::before {
+  background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+.appointment-card.pending::before {
+  background: linear-gradient(90deg, #ffc107, #fd7e14);
+}
+
+.appointment-card.completed::before {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+.appointment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.appointment-header h6 {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.appointment-date, .device-info {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+}
+
+.empty-state {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,283 @@
+/* ========================================
+   COMPLETE LOGIN & REGISTER PAGE STYLES
+   ======================================== */
+
+/* LOGIN PAGE */
+.login-page, .register-page {
+  background: linear-gradient(
+    135deg,
+    #181a29 0%,
+    #23263a 50%,
+    #2c2f4a 100%
+  ) !important;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login-page::before, .register-page::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(13, 110, 253, 0.2);
+  filter: blur(120px);
+  top: -100px;
+  left: -100px;
+  animation: float 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+.login-page::after, .register-page::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(102, 16, 242, 0.2);
+  filter: blur(120px);
+  bottom: -100px;
+  right: -100px;
+  animation: float 6s ease-in-out infinite reverse;
+  z-index: 1;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* BRAND LOGO */
+.brand-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 50%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+  margin-bottom: 1rem !important;
+}
+
+/* LOGIN/REGISTER CARDS */
+.login-card, .register-card {
+  background: rgba(24, 26, 41, 0.95) !important;
+  backdrop-filter: blur(30px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6) !important;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  color: #ffffff !important;
+}
+
+.login-card::before, .register-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  z-index: 11;
+}
+
+/* FORM INPUTS */
+.login-input, .register-input {
+  background: rgba(31, 34, 53, 0.8) !important;
+  border: 2px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  padding: 14px 20px !important;
+  font-size: 16px !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(15px) !important;
+  margin-bottom: 1rem !important;
+}
+
+.login-input::placeholder, .register-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.login-input:focus, .register-input:focus {
+  background: rgba(31, 34, 53, 0.95) !important;
+  border-color: rgba(13, 110, 253, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* FORM LABELS */
+.form-label {
+  color: #d1d5db !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 14px 30px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  height: 56px !important;
+  color: white !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+  width: 100% !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* REGISTER BUTTON */
+.register-btn {
+  background: linear-gradient(135deg, #198754 0%, #20c997 100%) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 14px 30px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  height: 56px !important;
+  color: white !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+  width: 100% !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* BUTTON HOVER EFFECTS */
+.login-btn:hover, .register-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.5) !important;
+}
+
+.login-btn::before, .register-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.login-btn:hover::before, .register-btn:hover::before {
+  left: 100%;
+}
+
+/* TEXT STYLES */
+.lead.text-muted {
+  color: #9ca3af !important;
+}
+
+.text-primary {
+  color: #0d6efd !important;
+}
+
+.text-primary:hover {
+  color: #6610f2 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .login-card, .register-card {
+    margin: 1rem !important;
+    max-width: none !important;
+  }
+  
+  .brand-logo {
+    font-size: 2rem !important;
+  }
+}
+
+/* FIXED SCROLL + UNIFIED AUTH PAGES */
+.auth-page {
+  background: linear-gradient(
+    135deg,
+    #181a29 0%,
+    #23263a 50%,
+    #2c2f4a 100%
+  ) !important;
+  min-height: 100vh;  /* CHANGED: was 100vh */
+  position: relative;
+  overflow: hidden;   /* KEEPS BACKGROUND ELEMENTS */
+  font-family: 'Montserrat', sans-serif !important;
+  padding: 2rem 0;    /* ADDED: breathing room */
+}
+
+/* CONTAINER SCROLL FIX */
+.auth-page .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  z-index: 10;
+  position: relative;
+}
+
+/* BACKGROUND ELEMENTS DON'T BLOCK SCROLL */
+.auth-page::before,
+.auth-page::after {
+  z-index: 1 !important;
+}
+
+/* BODY FIX - ENSURES SCROLL */
+body.auth-page {
+  overflow-y: auto !important;  /* ENABLES SCROLL */
+  min-height: 100vh;
+}
+
+/* REGISTER NEEDS EXTRA HEIGHT */
+.register-page .auth-card {
+  max-width: 520px;  /* Slightly wider for form */
+}
+
+/* PASSWORD TOGGLE */
+.password-group {
+  position: relative;
+}
+
+.toggle-password {
+  background: none !important;
+  border: none !important;
+  color: #9ca3af !important;
+  z-index: 3 !important;
+}
+
+.toggle-password:hover {
+  color: #ffffff !important;
+}
+
+.toggle-password i {
+  font-size: 16px !important;
+}
+
+.btn-toggle-pass {
+      position: absolute !important;
+      right: 12px !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      background: none !important;
+      border: none !important;
+      color: #9ca3af !important;
+      padding: 8px !important;
+      z-index: 5 !important;
+      opacity: 1 !important;
+}
+.btn-toggle-pass:hover { 
+  color: #ffffff !important; 
+}
+.register-input.pe-5 { 
+  padding-right: 50px !important; 
+}
