@@ -283,7 +283,7 @@ function initPerfect3Charts() {
         return;
     }
 
-    // ⭐ CHART 1: System Overview (Bar) ⭐
+    //  CHART 1: System Overview (Bar) 
     const overviewCtx = document.getElementById('overviewChart');
     if (overviewCtx) {
         new Chart(overviewCtx, {
@@ -330,7 +330,7 @@ function initPerfect3Charts() {
         });
     }
 
-    // ⭐ CHART 2: Appointment Status (Bar) ⭐
+    //  CHART 2: Appointment Status (Bar) 
     const statusCtx = document.getElementById('statusChart');
     if (statusCtx) {
         new Chart(statusCtx, {
@@ -383,7 +383,7 @@ function initPerfect3Charts() {
         });
     }
 
-    // ⭐ CHART 3: Service Popularity (Bar) ⭐
+    //  CHART 3: Service Popularity (Bar) 
     const serviceCtx = document.getElementById('serviceChart');
     if (serviceCtx && data.services && data.services.length > 0) {
         new Chart(serviceCtx, {
